@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LunaCycle Privacy Policy</title>
+<style>
+body{margin:0;background:#FEF8F4;color:#1D1B19;font:16px/1.6 -apple-system,Inter,Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+h1{color:#964142;font-size:2rem;line-height:1.2} h2{color:#446556;margin-top:2em;font-size:1.25rem}
+a{color:#964142} code{background:#F3EDE9;padding:0 4px;border-radius:4px} li{margin:6px 0}
+@media (prefers-color-scheme: dark){body{background:#171614;color:#F2EEE8} h1{color:#D68585} h2{color:#9DB8A8} a{color:#D68585} code{background:#292622}}
+</style></head><body><main>
+<h1>LunaCycle Privacy Policy</h1>
+<p><strong>Effective date:</strong> 22 September 2026 · <strong>App:</strong> LunaCycle (Android, package <code>com.manabxd.periodtracker</code>) · <strong>Developer:</strong> Manab Maity, India · <strong>Contact:</strong> manab2001maity@gmail.com</p>
+<p>LunaCycle is a period and cycle tracker built to keep your data on your phone. This policy explains exactly what the app stores, what leaves your device, and how you stay in control.</p>
+<h2>1. The short version</h2>
+<ul>
+<li>Everything you log stays in a database inside the app's private storage on your phone. No account is needed.</li>
+<li>LunaCycle contains <strong>no analytics, no advertising, and no tracking SDKs</strong>. We do not collect usage statistics, device identifiers, or crash reports.</li>
+<li><strong>Cloud backup is optional and off by default.</strong> If you turn it on, your data is encrypted on your phone with a passphrase only you know before it is stored in your Google-authenticated LunaCycle account. Nobody, including the developer, can read it.</li>
+<li>You can export or delete all of your data, and delete your cloud account, from inside the app at any time.</li>
+</ul>
+<h2>2. Data the app stores on your phone</h2>
+<p>When you use LunaCycle you may record:</p>
+<ul>
+<li>period start and end dates;</li>
+<li>daily entries: flow, mood, symptoms, medicine and contraceptive taken, energy, sleep, appetite and free-text notes;</li>
+<li>preferences: language, theme, cycle and period length, reminder times, discreet mode, and an optional app-lock PIN (stored only as a salted hash) with an optional fingerprint unlock flag.</li>
+</ul>
+<p>This information is used solely to show your calendar, predictions and reports on your device. Predictions are estimates based on what you log; LunaCycle is not a medical device and does not replace medical advice.</p>
+<h2>3. Optional cloud backup (Firebase)</h2>
+<p>If you choose <strong>Backup &amp; Sync → Continue with Google</strong>, the following happens:</p>
+<ul>
+<li><strong>Authentication.</strong> You sign in with your Google account through Firebase Authentication (a Google LLC service). Firebase receives your Google account identifier, name and email address to create your LunaCycle account. We use these only to identify your backup and to show your name in the app.</li>
+<li><strong>Encryption before upload.</strong> You choose a backup passphrase. The app derives an encryption key from it on your phone (PBKDF2-HMAC-SHA256, 200,000 iterations) and encrypts every period and daily-log record with AES-256-GCM before uploading. Your passphrase and key never leave your phone. If you forget the passphrase, the backup cannot be recovered by anyone.</li>
+<li><strong>Storage.</strong> Encrypted records are stored in Cloud Firestore (Google LLC) under a path only your account can access, enforced by server-side security rules. Google encrypts data in transit (TLS) and at rest. Firestore may cache data on your device for offline use; that cache is protected by Android app sandboxing.</li>
+<li><strong>What is stored:</strong> encrypted period and daily-log records, their timestamps, deletion markers, and a small encrypted verifier used to check your passphrase on a new phone. Preferences, PIN and reminder settings are <strong>not</strong> backed up.</li>
+<li><strong>Data location.</strong> The Firestore database is hosted in Google's <code>asia-south1</code> (Mumbai) region.</li>
+</ul>
+<p>You can turn backup off, sign out, or delete the cloud copy at any time (see section 6).</p>
+<h2>4. Data we never collect</h2>
+<p>No analytics, advertising identifiers, location, contacts, precise device identifiers, or crash logs. The app requests internet access only for the optional backup; without it, the app never connects to any server.</p>
+<h2>5. Permissions</h2>
+<ul>
+<li><strong>Notifications:</strong> for the optional period and daily-log reminders. Reminder text is neutral unless you enable detailed wording.</li>
+<li><strong>Biometrics:</strong> for the optional fingerprint unlock. Biometric data never leaves the Android system and is not accessible to the app.</li>
+<li><strong>Internet:</strong> only for the optional cloud backup.</li>
+<li><strong>Boot completed:</strong> to re-schedule your reminders after a restart.</li>
+</ul>
+<h2>6. Your controls</h2>
+<ul>
+<li><strong>Export:</strong> Reports → Export your data, or Settings → Data, produces CSV or PDF files that you choose where to share.</li>
+<li><strong>Delete everything on the phone:</strong> Settings → Data → Delete all data. If backup is on, the cloud copy is deleted as well.</li>
+<li><strong>Delete your cloud account:</strong> Backup &amp; Sync → Delete from the cloud removes all of your backup data and your Firebase account. You can also request deletion by emailing manab2001maity@gmail.com from the Google address you signed in with; we will delete the account and data within 30 days.</li>
+<li><strong>Sign out:</strong> keeps everything on your phone and stops any synchronisation.</li>
+</ul>
+<h2>7. Children</h2>
+<p>LunaCycle is intended for people aged 13 and over. We do not knowingly collect data from children under 13; the app has no way to do so because it collects nothing without the optional backup, which requires a Google account.</p>
+<h2>8. Sharing and third parties</h2>
+<p>We do not sell, rent or share your data. The only third party involved is Google LLC as the infrastructure provider for Firebase Authentication and Cloud Firestore, and only if you enable backup. Google processes this data under the <a href="https://firebase.google.com/terms">Firebase terms</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Because your records are encrypted with your passphrase, Google and the developer see only ciphertext.</p>
+<h2>9. Security</h2>
+<p>Local data lives in the app's private storage protected by Android's app sandbox, with an optional PIN or fingerprint lock. Backup data is encrypted end-to-end as described above. No system is perfectly secure; keep your device and passphrase safe.</p>
+<h2>10. Changes</h2>
+<p>If this policy changes, the new version will be published at the same address and the effective date updated. Material changes to how backup works will be announced inside the app.</p>
+<h2>11. Contact</h2>
+<p>Questions or deletion requests: manab2001maity@gmail.com</p>
+</main></body></html>
