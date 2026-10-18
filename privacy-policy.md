@@ -1,6 +1,6 @@
 # LunaCycle Privacy Policy
 
-**Effective date:** 22 September 2026 · **App:** LunaCycle (Android, package `com.manabxd.periodtracker`) · **Developer:** Manab Maity, India · **Contact:** manab2001maity@gmail.com
+**Effective date:** 18 October 2026 · **App:** LunaCycle (Android, package `com.manabxd.periodtracker`) · **Developer:** Manab Maity, India · **Contact:** manab2001maity@gmail.com
 
 LunaCycle is a period and cycle tracker built to keep your data on your phone. This policy explains exactly what the app stores, what leaves your device, and how you stay in control.
 
@@ -59,14 +59,24 @@ LunaCycle is intended for people aged 13 and over. We do not knowingly collect d
 
 We do not sell, rent or share your data. The only third party involved is Google LLC as the infrastructure provider for Firebase Authentication and Cloud Firestore, and only if you enable backup. Google processes this data under the [Firebase terms](https://firebase.google.com/terms) and the [Google Privacy Policy](https://policies.google.com/privacy). Because your records are encrypted with your passphrase, Google and the developer see only ciphertext.
 
-## 9. Security
+## 9. Your rights, wherever you live
+
+LunaCycle is available worldwide. Wherever you are, the controls in section 6 work directly in the app, with no need to contact us. If the law where you live gives you rights over your personal data, for example the GDPR in the EU, EEA and UK, the LGPD in Brazil, or the CCPA in California, you can also exercise them by email: access, correction, export, deletion, restriction of processing, and objection. We reply within 30 days and never charge a fee.
+
+- **Controller:** Manab Maity, India (contact below).
+- **Legal basis:** local-only use involves no processing by us at all. The optional backup is processed on the basis of your consent, given when you sign in and turn backup on, and withdrawn by turning backup off or deleting your cloud account.
+- **Retention:** backup data is kept until you delete it or your account; we never delete it on our own initiative except on your request.
+- **International transfer:** backup data is stored in Google's Mumbai (India) region. For users in the EU, EEA, UK and Switzerland this transfer is covered by Google's Standard Contractual Clauses under the [Firebase Data Processing and Security Terms](https://firebase.google.com/terms/data-processing-terms). Because records are encrypted with your passphrase before upload, the transferred data is ciphertext that neither Google nor we can read.
+- **Complaints:** if you believe we have handled your data incorrectly, you can complain to your local data protection authority. We would appreciate the chance to resolve it first.
+
+## 10. Security
 
 Local data lives in the app's private storage protected by Android's app sandbox, with an optional PIN or fingerprint lock. Backup data is encrypted end-to-end as described above. No system is perfectly secure; keep your device and passphrase safe.
 
-## 10. Changes
+## 11. Changes
 
 If this policy changes, the new version will be published at the same address and the effective date updated. Material changes to how backup works will be announced inside the app.
 
-## 11. Contact
+## 12. Contact
 
 Questions or deletion requests: manab2001maity@gmail.com
